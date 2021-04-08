@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.inetBanking.utilities.MyListener"></listener>
+	</listeners>
+	<test thread-count="5" name="e-Banking_Test">
+	<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.inetBanking.testcases.TC_LoginTest_001" />
+			<class name="com.inetBanking.testcases.TC_HomeTest_002" />
+			<class name="com.inetBanking.testcases.TC_AddCustomerTest_003" />
+			<class name="com.inetBanking.testcases.TC_DepositTest_004" />
+			<class name="com.inetBanking.testcases.TC_WithdrawalTest_005" />
+			<class name="com.inetBanking.testcases.TC_FundTransferTest_006" />
+			<class name="com.inetBanking.testcases.TC_CustomisedStatementTest_007" />
+
+
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
